@@ -1,0 +1,15 @@
+{
+  "name": "rpg-bot-autofarm",
+  "version": "1.0.0",
+  "description": "Automatically sends \"catch\", \"fish\" and \"chop\" when someone starts an event",
+  "main": "index.js",
+  "scripts": {
+    "run": "node ."
+  },
+  "author": "ChromiumCat0",
+  "license": "GPL-3.0-or-later",
+  "repository": "github:ChromiumCat0/RPG-bot-autofarm",
+  "dependencies": {
+    "discord.js": "^11.6.4"
+  }
+}
