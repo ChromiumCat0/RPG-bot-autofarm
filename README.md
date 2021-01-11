@@ -1,2 +1,2 @@
-# RPG-bot-autofarm
+# RPG bot autofarm
 **WARNING: Use at your own risk.**
