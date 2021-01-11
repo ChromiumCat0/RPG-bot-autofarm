@@ -52,25 +52,6 @@ client.on('message', message => {
 
     const delay = getRandomInt(minDelay, maxDelay);
 
-    if (message.content.startsWith('!debug')) {
-        const args = message.content.replace('!debug ', '').split(' ');
-        switch (args[0]) {
-            case 'catch':
-                setTimeout(sendCatch, delay, message);
-                break;
-            case 'fish':
-                setTimeout(sendFish, delay, message);
-                break;
-            case 'chop':
-                setTimeout(sendChop, delay, message);
-                break;
-        }
-    }
-
-    if (message.author === client.user && message.content === 'rpg hunt') {
-        setTimeout(() => message.channel.send('rpg heal'), 5000);
-    }
-
     if (message.author.id !== '555955826880413696') return;
     if (message.embeds[0] && message.embeds[0].fields[0]) {
         const fieldName = message.embeds[0].fields[0].name;
